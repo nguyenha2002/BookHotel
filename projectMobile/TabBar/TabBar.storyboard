@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="7Pq-L1-0vl">
+            <objects>
+                <viewController id="OlR-Dy-Cmt" customClass="SearchController" customModule="projectMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="HuN-FU-rj3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Qu6-40-aX3">
+                                <rect key="frame" x="15" y="59" width="363" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Aku-Ub-GwI"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="57q-pY-kSl">
+                                <rect key="frame" x="15" y="125" width="363" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuG-YY-Ysc">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="filter" title="  Filter" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapOnFilter:" destination="OlR-Dy-Cmt" eventType="touchUpInside" id="1p8-Bx-SJL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNi-O7-xHY">
+                                        <rect key="frame" x="129.33333333333334" y="0.0" width="104.33333333333334" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="sort" title=" Sort" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapOnSort:" destination="OlR-Dy-Cmt" eventType="touchUpInside" id="13o-d3-MPQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7F-4D-tng">
+                                        <rect key="frame" x="258.66666666666669" y="0.0" width="104.33333333333331" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="location" title=" Map">
+                                            <fontDescription key="titleFontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapOnMap:" destination="OlR-Dy-Cmt" eventType="touchUpInside" id="eiJ-Dt-Pax"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5C1-K7-P1g"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fcQ-ST-5Ph">
+                                <rect key="frame" x="0.0" y="185" width="393" height="584"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="YLD-bd-RNz">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zoW-9m-HTE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="57q-pY-kSl" firstAttribute="trailing" secondItem="Qu6-40-aX3" secondAttribute="trailing" id="NKM-aO-Uj9"/>
+                            <constraint firstItem="Qu6-40-aX3" firstAttribute="top" secondItem="zoW-9m-HTE" secondAttribute="top" id="XHY-qK-9K5"/>
+                            <constraint firstItem="fcQ-ST-5Ph" firstAttribute="top" secondItem="57q-pY-kSl" secondAttribute="bottom" constant="20" id="Xiu-4e-KfO"/>
+                            <constraint firstItem="fcQ-ST-5Ph" firstAttribute="leading" secondItem="zoW-9m-HTE" secondAttribute="leading" id="d17-52-urs"/>
+                            <constraint firstItem="zoW-9m-HTE" firstAttribute="bottom" secondItem="fcQ-ST-5Ph" secondAttribute="bottom" id="fsu-DH-Sxq"/>
+                            <constraint firstItem="zoW-9m-HTE" firstAttribute="trailing" secondItem="fcQ-ST-5Ph" secondAttribute="trailing" id="i50-kB-Srd"/>
+                            <constraint firstItem="57q-pY-kSl" firstAttribute="top" secondItem="Qu6-40-aX3" secondAttribute="bottom" constant="20" id="iS6-WI-PrO"/>
+                            <constraint firstItem="57q-pY-kSl" firstAttribute="leading" secondItem="Qu6-40-aX3" secondAttribute="leading" id="iyM-cA-OLX"/>
+                            <constraint firstItem="zoW-9m-HTE" firstAttribute="trailing" secondItem="Qu6-40-aX3" secondAttribute="trailing" constant="15" id="kVU-3h-CIX"/>
+                            <constraint firstItem="Qu6-40-aX3" firstAttribute="leading" secondItem="zoW-9m-HTE" secondAttribute="leading" constant="15" id="wa3-CR-sL0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="exr-qR-imZ"/>
+                    <connections>
+                        <outlet property="btnFilter" destination="vuG-YY-Ysc" id="1AY-pI-kM7"/>
+                        <outlet property="btnMap" destination="L7F-4D-tng" id="SVj-HF-hiQ"/>
+                        <outlet property="btnSort" destination="rNi-O7-xHY" id="c3N-wM-4wf"/>
+                        <outlet property="searchBar" destination="Qu6-40-aX3" id="yOC-ei-6vL"/>
+                        <outlet property="searchCollection" destination="fcQ-ST-5Ph" id="6iF-C0-6SQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pN-uC-aEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1307.6335877862596" y="-303.52112676056339"/>
+        </scene>
+        <!--My Stay-->
+        <scene sceneID="dop-84-2ia">
+            <objects>
+                <viewController id="i08-1B-rue" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H7a-vi-l68">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LbA-pe-ocy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Stay" image="book.pages" catalog="system" selectedImage="book.pages.fill" id="Yu1-dN-52v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfO-kp-GUx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="123"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="a4e-A3-F2M">
+            <objects>
+                <viewController id="6HU-dY-H1v" customClass="HomeController" customModule="projectMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vd2-Ve-jU2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9V4-B4-Ach">
+                                <rect key="frame" x="0.0" y="173" width="393" height="596"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="H16-sr-ejV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Find A Hotel" translatesAutoresizingMaskIntoConstraints="NO" id="4v2-lw-akc">
+                                <rect key="frame" x="16" y="59" width="272" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="6HU-dY-H1v" id="HlH-1S-jut"/>
+                                </connections>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PeW-MN-pwx">
+                                <rect key="frame" x="334" y="65" width="43" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="scF-6W-Gbq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="lEs-Sc-Vuw"/>
+                    <navigationItem key="navigationItem" id="i0Q-ca-fkd"/>
+                    <connections>
+                        <outlet property="imgAvatar" destination="PeW-MN-pwx" id="4JK-uL-PkR"/>
+                        <outlet property="listHotelCollection" destination="9V4-B4-Ach" id="qOZ-xn-dN4"/>
+                        <outlet property="searchBar" destination="4v2-lw-akc" id="luP-Zg-lJj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aab-qk-Wt9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514" y="-382"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DbQ-2v-gfW">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarVC" id="yg2-3K-FWt" customClass="TabBarController" customModule="projectMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MZB-fN-1F7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.16524989139999999" green="0.38570245949999998" blue="0.79794217140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabBar" destination="MZB-fN-1F7" id="pSR-MR-FfA"/>
+                        <segue destination="6HU-dY-H1v" kind="relationship" relationship="viewControllers" id="Xn9-Oc-sIL"/>
+                        <segue destination="OlR-Dy-Cmt" kind="relationship" relationship="viewControllers" id="Zf4-O1-Z9Q"/>
+                        <segue destination="i08-1B-rue" kind="relationship" relationship="viewControllers" id="aUI-qG-h0i"/>
+                        <segue destination="qNa-fL-snd" kind="relationship" relationship="viewControllers" id="me0-xK-dOo"/>
+                        <segue destination="wJg-Gi-4PJ" kind="relationship" relationship="viewControllers" id="jGh-E2-DxI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaB-V4-O1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418" y="85"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="S0Y-xr-ixl">
+            <objects>
+                <viewController id="qNa-fL-snd" customClass="FavoriteController" customModule="projectMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nRl-FS-v38">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bb2-Fy-YBj">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="iyY-7R-Jg1">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="32b-Ov-kiw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bb2-Fy-YBj" firstAttribute="bottom" secondItem="32b-Ov-kiw" secondAttribute="bottom" id="Drv-f3-Nn9"/>
+                            <constraint firstItem="Bb2-Fy-YBj" firstAttribute="leading" secondItem="32b-Ov-kiw" secondAttribute="leading" id="E6u-2U-nPc"/>
+                            <constraint firstItem="Bb2-Fy-YBj" firstAttribute="top" secondItem="32b-Ov-kiw" secondAttribute="top" id="bs2-dA-wHB"/>
+                            <constraint firstItem="Bb2-Fy-YBj" firstAttribute="trailing" secondItem="32b-Ov-kiw" secondAttribute="trailing" id="uhA-I5-9g2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heart" catalog="system" selectedImage="heart.fill" id="WGW-aL-weR"/>
+                    <connections>
+                        <outlet property="favoriteCollection" destination="Bb2-Fy-YBj" id="kss-Xm-CIc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6M-9U-bl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514" y="463"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="RAn-G1-YjX">
+            <objects>
+                <viewController id="wJg-Gi-4PJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kl4-zd-0pk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="x6o-Gr-dIO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User" image="person" catalog="system" selectedImage="person.fill" id="h5a-vu-tUr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMW-ce-qFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="586"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.pages" catalog="system" width="107" height="128"/>
+        <image name="book.pages.fill" catalog="system" width="107" height="128"/>
+        <image name="filter" width="15" height="15"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="location" width="15" height="15"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="sort" width="15" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

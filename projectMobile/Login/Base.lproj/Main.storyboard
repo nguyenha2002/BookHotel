@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yd1-T7-bDt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="LoginController" customModule="projectMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuC-Tx-o3h">
+                                <rect key="frame" x="20" y="133" width="260" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TnD-na-Khm"/>
+                                    <constraint firstAttribute="width" constant="260" id="fC4-DX-t78"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please sign in to your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx2-Uf-xIg">
+                                <rect key="frame" x="20" y="233" width="260" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-T3-aSy">
+                                <rect key="frame" x="20" y="290" width="260" height="27"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zI-nn-MrF">
+                                <rect key="frame" x="20" y="407" width="260" height="27"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XML-pW-a3j">
+                                <rect key="frame" x="20" y="327" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8eR-wz-6Y9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nal-Vg-ju5">
+                                <rect key="frame" x="20" y="444" width="353" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESp-c5-uIE">
+                                <rect key="frame" x="213.33333333333337" y="504" width="159.66666666666663" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uix-1N-FfJ"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password?" titleAlignment="trailing">
+                                    <fontDescription key="titleFontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOnForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLn-tw-wOu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mI-65-jFM">
+                                <rect key="frame" x="20" y="564" width="353" height="50"/>
+                                <color key="backgroundColor" red="0.94328010080000002" green="0.7069369324" blue="0.020491315390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                    <fontDescription key="titleFontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOnSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkz-pw-0xJ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="c4t-f8-1zb">
+                                <rect key="frame" x="84.000000000000014" y="634" width="225.33333333333337" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD0-ze-ffH">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="50"/>
+                                        <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOL-Eh-sHm">
+                                        <rect key="frame" x="148" y="0.0" width="77.333333333333314" height="50"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Register">
+                                            <fontDescription key="titleFontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tapOnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQI-55-7wI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mTw-2F-zsh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8zI-nn-MrF" firstAttribute="trailing" secondItem="OkK-T3-aSy" secondAttribute="trailing" id="1Im-53-fbX"/>
+                            <constraint firstItem="Nal-Vg-ju5" firstAttribute="top" secondItem="8zI-nn-MrF" secondAttribute="bottom" constant="10" id="1dM-4Z-gmt"/>
+                            <constraint firstItem="gx2-Uf-xIg" firstAttribute="top" secondItem="zuC-Tx-o3h" secondAttribute="bottom" id="4wA-KF-h8z"/>
+                            <constraint firstItem="XML-pW-a3j" firstAttribute="leading" secondItem="OkK-T3-aSy" secondAttribute="leading" id="5BK-nb-D2Z"/>
+                            <constraint firstItem="gx2-Uf-xIg" firstAttribute="leading" secondItem="zuC-Tx-o3h" secondAttribute="leading" id="5oq-dQ-oKC"/>
+                            <constraint firstItem="zuC-Tx-o3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="COd-XU-AYb"/>
+                            <constraint firstItem="ESp-c5-uIE" firstAttribute="trailing" secondItem="Nal-Vg-ju5" secondAttribute="trailing" id="GMF-mt-f5t"/>
+                            <constraint firstItem="Nal-Vg-ju5" firstAttribute="trailing" secondItem="XML-pW-a3j" secondAttribute="trailing" id="HOY-PT-M0j"/>
+                            <constraint firstItem="1mI-65-jFM" firstAttribute="trailing" secondItem="Nal-Vg-ju5" secondAttribute="trailing" id="N2r-HE-0ax"/>
+                            <constraint firstItem="1mI-65-jFM" firstAttribute="height" secondItem="Nal-Vg-ju5" secondAttribute="height" id="REo-Or-uAY"/>
+                            <constraint firstItem="zuC-Tx-o3h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="RdL-1v-VKe"/>
+                            <constraint firstItem="8zI-nn-MrF" firstAttribute="top" secondItem="XML-pW-a3j" secondAttribute="bottom" constant="30" id="Ul8-di-N08"/>
+                            <constraint firstItem="XML-pW-a3j" firstAttribute="top" secondItem="OkK-T3-aSy" secondAttribute="bottom" constant="10" id="VKX-cq-Jxg"/>
+                            <constraint firstItem="OkK-T3-aSy" firstAttribute="top" secondItem="gx2-Uf-xIg" secondAttribute="bottom" constant="30" id="XoY-e2-ZyN"/>
+                            <constraint firstItem="c4t-f8-1zb" firstAttribute="top" secondItem="1mI-65-jFM" secondAttribute="bottom" constant="20" id="Y0U-kV-ntk"/>
+                            <constraint firstItem="1mI-65-jFM" firstAttribute="leading" secondItem="Nal-Vg-ju5" secondAttribute="leading" id="YDe-VF-8Pg"/>
+                            <constraint firstItem="8zI-nn-MrF" firstAttribute="leading" secondItem="OkK-T3-aSy" secondAttribute="leading" id="a2r-wx-dg0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XML-pW-a3j" secondAttribute="trailing" constant="20" id="cMY-1f-hEu"/>
+                            <constraint firstItem="c4t-f8-1zb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="efo-R1-gxv"/>
+                            <constraint firstItem="ESp-c5-uIE" firstAttribute="top" secondItem="Nal-Vg-ju5" secondAttribute="bottom" constant="10" id="gL6-cu-euP"/>
+                            <constraint firstItem="1mI-65-jFM" firstAttribute="top" secondItem="ESp-c5-uIE" secondAttribute="bottom" constant="30" id="gmp-sb-LG1"/>
+                            <constraint firstItem="Nal-Vg-ju5" firstAttribute="leading" secondItem="XML-pW-a3j" secondAttribute="leading" id="hic-tE-S8Y"/>
+                            <constraint firstItem="Nal-Vg-ju5" firstAttribute="height" secondItem="XML-pW-a3j" secondAttribute="height" id="l92-3m-Hcx"/>
+                            <constraint firstItem="OkK-T3-aSy" firstAttribute="leading" secondItem="gx2-Uf-xIg" secondAttribute="leading" id="mJa-Ox-N5X"/>
+                            <constraint firstItem="gx2-Uf-xIg" firstAttribute="width" secondItem="zuC-Tx-o3h" secondAttribute="width" id="nTS-m4-N39"/>
+                            <constraint firstItem="OkK-T3-aSy" firstAttribute="trailing" secondItem="gx2-Uf-xIg" secondAttribute="trailing" id="pgD-5x-JCN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vgo-u4-xQL"/>
+                    <connections>
+                        <outlet property="btnRegister" destination="TOL-Eh-sHm" id="4KJ-qi-rGX"/>
+                        <outlet property="btnSignIn" destination="1mI-65-jFM" id="hVM-Vr-9yL"/>
+                        <outlet property="tfEmail" destination="XML-pW-a3j" id="kxy-6K-9ky"/>
+                        <outlet property="tfPassword" destination="Nal-Vg-ju5" id="W7G-iJ-7yG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3835.8778625954196" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1gX-Da-0pd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yd1-T7-bDt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X7K-nn-LbK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ddT-Yh-RlK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRn-70-xOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909.1603053435115" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

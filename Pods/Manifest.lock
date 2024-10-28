@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.9.1)
+  - FSCalendar (2.8.4)
+  - RangeSeekSlider (1.8.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - FSCalendar
+  - RangeSeekSlider
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - RangeSeekSlider
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+
+PODFILE CHECKSUM: 7bf33bab588ca13d7c503293b1abbd78f1edec37
+
+COCOAPODS: 1.15.2

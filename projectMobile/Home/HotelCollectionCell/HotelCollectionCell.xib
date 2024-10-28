@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HotelCollectionCell" customModule="projectMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="319"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="277" height="319"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" restorationIdentifier="hotelCollectionCell" translatesAutoresizingMaskIntoConstraints="NO" id="Nei-NZ-hxC">
+                        <rect key="frame" x="0.0" y="0.0" width="277" height="319"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t83-OY-qP7">
+                                <rect key="frame" x="0.0" y="0.0" width="277" height="212.66666666666666"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDV-xU-Z9I">
+                                <rect key="frame" x="10" y="222.66666666666666" width="184.66666666666666" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.16524989139999999" green="0.38570245949999998" blue="0.79794217140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4im-eq-vK1">
+                                <rect key="frame" x="10" y="263.33333333333331" width="184.66666666666666" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3D-oA-uuD">
+                                <rect key="frame" x="10" y="243" width="184.66666666666666" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhA-RG-B81">
+                                <rect key="frame" x="207" y="242.66666666666663" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RZQ-dQ-9Sn"/>
+                                    <constraint firstAttribute="width" constant="60" id="SHU-fZ-2I3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="6tz-rU-C6k">
+                                <rect key="frame" x="160" y="242.66666666666663" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="4Xu-Q1-E7G"/>
+                                    <constraint firstAttribute="width" constant="42" id="NMe-UI-lOw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4im-eq-vK1" firstAttribute="width" secondItem="j3D-oA-uuD" secondAttribute="width" id="40H-yw-EMP"/>
+                            <constraint firstItem="6tz-rU-C6k" firstAttribute="top" secondItem="xhA-RG-B81" secondAttribute="top" id="4F1-tM-20O"/>
+                            <constraint firstAttribute="trailing" secondItem="t83-OY-qP7" secondAttribute="trailing" id="4vB-vo-n2Y"/>
+                            <constraint firstItem="t83-OY-qP7" firstAttribute="height" secondItem="Nei-NZ-hxC" secondAttribute="height" multiplier="2/3" id="Dig-Vn-8YB"/>
+                            <constraint firstAttribute="trailing" secondItem="xhA-RG-B81" secondAttribute="trailing" constant="10" id="DlN-bM-7EE"/>
+                            <constraint firstItem="gDV-xU-Z9I" firstAttribute="top" secondItem="t83-OY-qP7" secondAttribute="bottom" constant="10" id="UTP-Ss-Ddo"/>
+                            <constraint firstItem="t83-OY-qP7" firstAttribute="top" secondItem="Nei-NZ-hxC" secondAttribute="top" id="Usn-i1-p4y"/>
+                            <constraint firstItem="j3D-oA-uuD" firstAttribute="width" secondItem="gDV-xU-Z9I" secondAttribute="width" id="beT-Fr-BG9"/>
+                            <constraint firstItem="j3D-oA-uuD" firstAttribute="top" secondItem="gDV-xU-Z9I" secondAttribute="bottom" id="cPI-VY-bpA"/>
+                            <constraint firstItem="t83-OY-qP7" firstAttribute="leading" secondItem="Nei-NZ-hxC" secondAttribute="leading" id="eud-VP-geY"/>
+                            <constraint firstItem="xhA-RG-B81" firstAttribute="leading" secondItem="6tz-rU-C6k" secondAttribute="trailing" constant="5" id="fcO-tX-Cqz"/>
+                            <constraint firstItem="j3D-oA-uuD" firstAttribute="leading" secondItem="gDV-xU-Z9I" secondAttribute="leading" id="hWL-bs-jlU"/>
+                            <constraint firstItem="4im-eq-vK1" firstAttribute="leading" secondItem="j3D-oA-uuD" secondAttribute="leading" id="jbG-FB-sGF"/>
+                            <constraint firstItem="xhA-RG-B81" firstAttribute="top" secondItem="t83-OY-qP7" secondAttribute="bottom" constant="30" id="mbV-98-5P7"/>
+                            <constraint firstItem="gDV-xU-Z9I" firstAttribute="leading" secondItem="Nei-NZ-hxC" secondAttribute="leading" constant="10" id="psP-hW-4sn"/>
+                            <constraint firstItem="gDV-xU-Z9I" firstAttribute="width" secondItem="Nei-NZ-hxC" secondAttribute="width" multiplier="2/3" id="uae-Bl-9ke"/>
+                            <constraint firstItem="4im-eq-vK1" firstAttribute="top" secondItem="j3D-oA-uuD" secondAttribute="bottom" id="w7b-ft-KtN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Nei-NZ-hxC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GGs-UN-OwX"/>
+                <constraint firstAttribute="trailing" secondItem="Nei-NZ-hxC" secondAttribute="trailing" id="OZv-pW-fMD"/>
+                <constraint firstItem="Nei-NZ-hxC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="krC-F8-nj0"/>
+                <constraint firstAttribute="bottom" secondItem="Nei-NZ-hxC" secondAttribute="bottom" id="oIQ-ws-aSd"/>
+            </constraints>
+            <size key="customSize" width="277" height="319"/>
+            <connections>
+                <outlet property="imgHotel" destination="t83-OY-qP7" id="Xot-G1-Frc"/>
+                <outlet property="imgStar" destination="6tz-rU-C6k" id="2Qs-Gc-k6S"/>
+                <outlet property="lbAddressHotel" destination="j3D-oA-uuD" id="mEZ-CM-g3m"/>
+                <outlet property="lbNameHotel" destination="gDV-xU-Z9I" id="8Tv-rC-0f8"/>
+                <outlet property="lbPriceHotel" destination="4im-eq-vK1" id="ppr-zR-LL0"/>
+                <outlet property="lbStarAverage" destination="xhA-RG-B81" id="XGe-k1-qxO"/>
+                <outlet property="viewCell" destination="Nei-NZ-hxC" id="gpM-Nh-H6c"/>
+            </connections>
+            <point key="canvasLocation" x="312.21374045801525" y="86.971830985915503"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star_yellow" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

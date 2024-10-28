@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="imageCollectionCell" id="gTV-IL-0wX" customClass="ImageCollectionCell" customModule="projectMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqX-In-AmC">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="154"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eI3-Z3-Lwu">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="154"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eI3-Z3-Lwu" firstAttribute="leading" secondItem="eqX-In-AmC" secondAttribute="leading" id="6aU-UI-ZxT"/>
+                            <constraint firstAttribute="trailing" secondItem="eI3-Z3-Lwu" secondAttribute="trailing" id="L6V-aD-mAz"/>
+                            <constraint firstItem="eI3-Z3-Lwu" firstAttribute="top" secondItem="eqX-In-AmC" secondAttribute="top" id="TDX-dK-i9p"/>
+                            <constraint firstAttribute="bottom" secondItem="eI3-Z3-Lwu" secondAttribute="bottom" id="wHz-s2-VOI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eqX-In-AmC" secondAttribute="bottom" id="2LG-hp-2rW"/>
+                <constraint firstItem="eqX-In-AmC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WVo-fq-ser"/>
+                <constraint firstAttribute="trailing" secondItem="eqX-In-AmC" secondAttribute="trailing" id="clF-VN-jSc"/>
+                <constraint firstItem="eqX-In-AmC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dcm-kJ-B8R"/>
+            </constraints>
+            <size key="customSize" width="150" height="154"/>
+            <connections>
+                <outlet property="imgRoom" destination="eI3-Z3-Lwu" id="BYO-b6-Yqk"/>
+                <outlet property="viewCollection" destination="eqX-In-AmC" id="dqY-5e-yh8"/>
+            </connections>
+            <point key="canvasLocation" x="206.10687022900763" y="23.943661971830988"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
